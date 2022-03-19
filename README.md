@@ -13,6 +13,10 @@ Constrains:
 > ? 2_3/8 + 9/8  
 > = 3_1/2
 
+#### Input Assumptions:
+Note: Currently added check for input to start with "?". Ideally we would have regex for valid input check.
+> Input will start with "?", one whitespace, first fraction/whole number, one whitespace, one of the four operand(+,-,*,/), white space and second fraction/whole number.
+
 ### Requirements/Installations:
 
 1. Java version 8+ (JDK 1.8) [link](https://www.oracle.com/java/technologies/downloads/)
