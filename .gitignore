@@ -24,7 +24,7 @@ hs_err_pid*
 
 # intellij
 .idea
-.iml
+*.iml
 
 target/
 pom.xml.tag
