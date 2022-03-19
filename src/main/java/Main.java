@@ -76,8 +76,16 @@ public class Main {
     // convert fraction value to double decimal
     public static double convertFractionToDecimal(String x) {
         String[] str = x.split("/");
-        double numerator = Double.parseDouble(str[0]);
-        double denominator = Double.parseDouble(str[1]);
+        double numerator, denominator;
+        if (str.length == 1) {
+            // whole number
+            numerator = Double.parseDouble(str[0]);
+            denominator = 1.0;
+        } else {
+            // fraction number
+            numerator = Double.parseDouble(str[0]);
+            denominator = Double.parseDouble(str[1]);
+        }
         double result = numerator / denominator;
         return result;
     }
